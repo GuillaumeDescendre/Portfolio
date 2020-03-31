@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <title>Guillaume's portfolio</title>
   <meta name="description" content="The HTML5 Herald">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Guillaume Descendre</a>
+    <a name="home"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#home">Guillaume Descendre</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -19,13 +20,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#mywork" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               My work
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,23 +43,60 @@
       <div class="hero-text">
         <h1>I am Guillaume</h1>
         <p>And I'm an IT student</p>
-        <button type="button" class="btn btn-outline-primary">Primary</button>
       </div>
     </div>
-
+    <a name="about"></a>
     <div class="about" >
       <div class="about-text">
-          <h1 class="about-title">About</h1>
+          <h1 style="margin-bottom: 30px;" class="about-title">About</h1>
           <p>Hey, my name is Guillaume and i am studying computer sciences at UCLL in Leuven(Belgium). Beside my studies i like to work as a freelance for small businesses and work on personal projects. </p>
-          <a download href="/img/Banner.png">Download CV</a>
+          <a download="CV-Guillaume.pdf" href="/img/cvnl.pdf"><button class="buttons">Download CV</button></a>
       </div>
   </div>
+  <a name="mywork"></a>
+  <h1 class="my-work-title">My work</h1>
+  <div class="my-work">
+    <div class="column">
+      <div class="card" style="width: 18rem;">
+        <img src="./img/webdev.png" class="card-img-top">
+        <div class="card-body">
+          <h3>Web development</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="buttons">See more</button>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card" style="width: 18rem;">
+        <img src="./img/appdev.png" class="card-img-top">
+        <div class="card-body">
+          <h3>App development</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="buttons">See more</button>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card" style="width: 18rem;">
+        <img src="./img/blender.png" class="card-img-top">
+        <div class="card-body">
+          <h3>3D modeling</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="buttons">See more</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </header>
+  <footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">
+      <p><a href="https://www.linkedin.com/in/guillaume-descendre-b60a971a2/" class="fa fa-linkedin"></a></p>
+      © 2020 Made by me.
+    </div>
+  </footer>
 
-
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
