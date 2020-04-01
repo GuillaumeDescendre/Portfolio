@@ -53,11 +53,11 @@
   border-top-right-radius: 0.5rem;
 }
 
+
 .my-work {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 55vh;
   max-width: 60%;
   margin: auto;
   margin-bottom: 10vh;
@@ -89,6 +89,10 @@
   background-color: #F76160;
   border: 1px solid #F76160;
   border-radius: 10px;
+}
+
+.navbar-light .navbar-brand{
+  color: #F76160;
 }
 
 .buttons{
@@ -123,4 +127,8 @@ h3{
   font-size: 30px;
   text-align: center;
   text-decoration: none;
+}
+
+.footer{
+  position: fixed ;
 }
